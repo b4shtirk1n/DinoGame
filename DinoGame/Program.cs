@@ -12,7 +12,6 @@ namespace DinoGame
         private static int direction = 0;
         private static int speedUp = 0;
         private static int speed = 100;
-        private static int score = 0;
 
         private static void Main()
         {
@@ -41,6 +40,7 @@ namespace DinoGame
 
         private static void Start()
         {
+            int score = 0;
             string[,] gameField =
             {
                 { "", "" },
@@ -72,6 +72,7 @@ namespace DinoGame
                         case ConsoleKey.UpArrow: Jump(ref gameField[10, 0]); break;
                         default: break;
                     }
+                    break;
                 }
 
                 if (speedUp == 10 && speed > 1)
@@ -95,7 +96,7 @@ namespace DinoGame
                 gameField[1, 1] = $"score: {score++}";
                 speedUp++;
             }
-            GameOver();
+            GameOver(score);
         }
 
         private static void CreateCactus(ref string cactusField)
@@ -151,7 +152,7 @@ namespace DinoGame
             Thread.Sleep(speed);
         }
 
-        private static void GameOver()
+        private static void GameOver(int score)
         {
             Console.Clear();
             Console.WriteLine(
@@ -168,7 +169,12 @@ namespace DinoGame
                 "\n" +
                 "--------------------------------------------------");
 
-            Console.ReadKey();
+            switch (Console.ReadKey().Key)
+            {
+                case ConsoleKey.Enter: Start(); break;
+                case ConsoleKey.Escape: break;
+                default: Console.Clear(); GameOver(score); break;
+            }
         }
     }
 }

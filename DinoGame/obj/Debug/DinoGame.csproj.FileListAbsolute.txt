@@ -1,0 +1,8 @@
+C:\Users\b4shtirk1n\source\repos\DinoGame\DinoGame\bin\Debug\DinoGame.exe.config
+C:\Users\b4shtirk1n\source\repos\DinoGame\DinoGame\bin\Debug\DinoGame.exe
+C:\Users\b4shtirk1n\source\repos\DinoGame\DinoGame\bin\Debug\DinoGame.pdb
+C:\Users\b4shtirk1n\source\repos\DinoGame\DinoGame\obj\Debug\DinoGame.csproj.AssemblyReference.cache
+C:\Users\b4shtirk1n\source\repos\DinoGame\DinoGame\obj\Debug\DinoGame.csproj.SuggestedBindingRedirects.cache
+C:\Users\b4shtirk1n\source\repos\DinoGame\DinoGame\obj\Debug\DinoGame.csproj.CoreCompileInputs.cache
+C:\Users\b4shtirk1n\source\repos\DinoGame\DinoGame\obj\Debug\DinoGame.exe
+C:\Users\b4shtirk1n\source\repos\DinoGame\DinoGame\obj\Debug\DinoGame.pdb
